@@ -1,0 +1,29 @@
+#include <iostream>
+#include <conio.h>
+using namespace std;
+
+int main()
+{
+    int n, n1 = 0, n2 = 1, nextnum;
+
+
+    cout << "Fibonacci Sequence: ";
+
+    for (n = 1; n <= 22; ++n)
+    {
+        if(n == 1)
+        cout << n1 << ",";
+            
+        else if(n == 2)
+        cout << n2 << ",";
+            
+        nextnum = n1 + n2 ;
+        n1 = n2;
+        n2 = nextnum;
+        
+        cout << nextnum <<",";
+    }
+    _getch();
+    return 0;
+
+}
