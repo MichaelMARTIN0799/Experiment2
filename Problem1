@@ -1,0 +1,55 @@
+#include <iostream>
+#include <conio.h>
+using namespace std;
+
+int main()
+{
+	char package;
+	int hours;
+	
+	cout << "Welcome! Here are the packages that we offer " << endl;
+	cout << "---------------------------------------------------------------------------------------"<<endl;
+	cout <<"Package A: For P995/mo 10hrs of access are provided. Additional hours are P20/hr."<<endl;
+	cout <<"Package B: For P1495/mo 20hrs of access are provided. Additional hours are P10/hr."<<endl;
+	cout <<"Package C: For P1995/mo of unlimited access are provided."<<endl;
+	
+	cout <<"Enter the package that you are subscribed with: "<<endl;
+		cin>>package;
+	while (package!= 'A' && package!= 'a' && package!= 'B' && package!= 'b' && package!= 'C' && package!= 'c')
+	{
+		cout<<"You should choose between A, B, and C!"<<endl;
+		cout<<"Enter the package that you are subscribed with"<<endl;
+			cin>>package;
+	}
+	
+	cout <<"Enter the number of hours used"<<endl;
+		cin>>hours;
+	while (hours < 0)
+	{
+		cout<<"hours cannot be negataive"<<endl;
+		cout<<"Enter the number of hours used"<<endl;
+			cin>>hours;
+	}
+		
+	if (package == 'A' || package == 'a')
+	{
+		if (hours<=10)
+		cout<<"your final bill is: 995";
+		else
+		cout<<"Your final bill is: "<<(995+(hours-10)*20);
+	}
+	if (package == 'B' || package == 'b')
+	{
+		if (hours<=20)
+		cout<< "your final bill is: 1495";
+		else 
+		cout <<"your final bill is: "<<(1495+(hours-20)*10);
+	}
+	if (package == 'C' || package == 'c')
+	cout<<"your final bill is: 1995";
+  
+ 
+_getch();
+return 0;
+	
+}
