@@ -1,0 +1,22 @@
+#include <iostream>
+#inlude <conio.h>
+using namespace std;
+
+int main()
+{
+	int x;
+	cout<<"Counting........"<<endl;
+	for(x=1;x<31;x++)
+
+{
+	if (x>10)
+	x=x+1;
+	else
+	x=x;
+	cout<<x<<", ";
+}
+
+_getch();
+	
+return 0;
+}
