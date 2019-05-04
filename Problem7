@@ -1,0 +1,27 @@
+#include <iostream>
+#include <conio.h>
+using namespace std;
+
+int main()
+{
+	a:
+   int n, i, sum;
+   sum=0;
+   
+   cout<<"Enter a positive integer"<<endl;
+   cin>>n;
+   if (n<=0)
+
+   {
+   	cout<<"Thank you"<<endl;
+
+   }   
+      	   break;
+   for(i=1;i<=n;++i)
+   
+   sum=sum+i;
+   cout<<"sum is "<<sum<<endl;}
+   goto a;
+return 0;
+_getch();
+}
